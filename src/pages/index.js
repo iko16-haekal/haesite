@@ -4,7 +4,7 @@ import Hero from "../assets/animations/hero.json"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import Card from "../components/card"
+import Card from "../components/Card"
 const hero = {
   loop: true,
   autoplay: true,
