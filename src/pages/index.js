@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Card from "../components/Card"
+import "./index.css"
 const hero = {
   loop: true,
   autoplay: true,
@@ -93,7 +94,7 @@ const IndexPage = () => (
           Skill saya
         </h1>
         <br />
-        <div className="mt-8 sm:mt-10 grid grid-cols-3 sm:grid-cols-6 sm:gap-1 gap-12 ">
+        <div className="mt-5 sm:mt-10 grid grid-cols-3 sm:grid-cols-6 sm:gap-1 gap-12 ">
           <div className="w-2/4">
             <Image className="object-fill block" filename="react.png" />
           </div>
@@ -124,7 +125,7 @@ const IndexPage = () => (
         </h1>
         <br />
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 gap-y-10 sm:gap-8 mt-8">
+        <div className="grid grid-cols-1 mr-10 sm:grid-cols-3 gap-2 gap-y-10 sm:gap-8 mt-8">
           <Card title="website untukdunia" image="untukdunia.png" />
           <Card title="website lowongan kerja" image="icojob.png" />
         </div>
@@ -132,7 +133,7 @@ const IndexPage = () => (
       {/* end skill */}
       <div
         id="kontak"
-        className="flex   shadow-xs mb-16 mt-16  sm:mt-10 lg:mb-20 sm:mx-20 mx-8   lg:flex-col flex-col"
+        className="flex   shadow-xs mb-20 mt-16  sm:mt-10 lg:mb-20 sm:mx-20 mx-8   lg:flex-col flex-col"
       >
         <h1 className="sm:text-4xl text-3xl font-bold leading-loose block ">
           Kontak Saya
