@@ -34,9 +34,11 @@ const Image = props => (
       //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
       return (
         <Img
+          width={props.width}
+          height={props.height}
           alt={props.alt}
-          fluid={image.node.childImageSharp.fluid}
           className={props.className}
+          fluid={image.node.childImageSharp.fluid}
         />
       )
     }}

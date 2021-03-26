@@ -7,7 +7,7 @@ function Navbar() {
       <div style={{ fontFamily: '"Poppins", sans-serif' }}>
         <header>
           <div className="mx-auto flex py-8 lg:px-24 md:px-16 sm:px-8 px-8 items-center justify-between lg:justify-start">
-            <a href="#">
+            <a href="#home">
               <Image filename="logo.png" className="w-12" />
             </a>
             <div className="flex mr-0 lg:hidden cursor-pointer">
@@ -42,7 +42,7 @@ function Navbar() {
                 open ? "flex" : ""
               } ${open ? " " : " hidden"} `}
             >
-              <a href="#">
+              <a href="#home">
                 <Image
                   filename="logo.png"
                   className="w-5"
@@ -55,19 +55,20 @@ function Navbar() {
                   color: "#1d1e3c",
                   fontFamily: '"Poppins", sans-serif',
                 }}
-                href="#"
+                href="#home"
               >
                 Home
               </a>
+
               <a
                 className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
                 style={{
                   color: "#1d1e3c",
                   fontFamily: '"Poppins", sans-serif',
                 }}
-                href="#"
+                href="#tentang"
               >
-                Feature
+                Tentang
               </a>
               <a
                 className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
@@ -75,40 +76,21 @@ function Navbar() {
                   color: "#1d1e3c",
                   fontFamily: '"Poppins", sans-serif',
                 }}
-                href="#"
+                href="#kontak"
               >
-                Pricing
-              </a>
-              <a
-                className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-                style={{
-                  color: "#1d1e3c",
-                  fontFamily: '"Poppins", sans-serif',
-                }}
-                href="#"
-              >
-                About Us
-              </a>
-              <a
-                className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-                style={{
-                  color: "#1d1e3c",
-                  fontFamily: '"Poppins", sans-serif',
-                }}
-                href="#"
-              >
-                Contact
+                Kontak
               </a>
               <div className="flex items-center justify-end w-full lg:hidden mt-3">
-                <button
+                <a
+                  href="#kontak"
                   className="text-white text-lg py-3 px-8 rounded-xl focus:outline-none hover:shadow-lg font-semibold"
                   style={{
                     background: "#27c499",
                     fontFamily: '"Poppins", sans-serif',
                   }}
                 >
-                  Pesan
-                </button>
+                  Hire me!
+                </a>
               </div>
               <svg
                 onClick={() => setOpen(!open)}
@@ -127,15 +109,16 @@ function Navbar() {
               </svg>
             </nav>
             <div className="hidden lg:inline-flex">
-              <button
+              <a
+                href="#kontak"
                 className="inline-flex text-white text-lg leading-7 py-3 px-8 rounded-xl focus:outline-none hover:shadow-lg font-semibold"
                 style={{
                   background: "#27c499",
                   fontFamily: '"Poppins", sans-serif',
                 }}
               >
-                Pesan
-              </button>
+                Hire me!
+              </a>
             </div>
           </div>
         </header>
