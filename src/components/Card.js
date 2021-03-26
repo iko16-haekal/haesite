@@ -5,8 +5,8 @@ function Card({ image, title, description = "", link = "#" }) {
   return (
     <>
       <a href={link}>
-        <div class="bg-white w-full  m-auto border-1  border-dashed border-gray-100 shadow-md rounded-lg overflow-hidden ">
-          <div className="h-1/2">
+        <div class="bg-white mr-1 sm:mr-0  m-auto border-1  border-dashed border-gray-100 shadow-md rounded-lg overflow-hidden ">
+          <div>
             <Image
               filename={image}
               alt=""

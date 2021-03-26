@@ -7,9 +7,6 @@ function Navbar() {
       <div style={{ fontFamily: '"Poppins", sans-serif' }}>
         <header>
           <div className="mx-auto flex py-8 lg:px-24 md:px-16 sm:px-8 px-8 items-center justify-between lg:justify-start">
-            <a href="#home">
-              <Image filename="logo.png" className="w-12" />
-            </a>
             <div className="flex mr-0 lg:hidden cursor-pointer">
               <svg
                 className="w-6 h-6"
@@ -43,43 +40,11 @@ function Navbar() {
               } ${open ? " " : " hidden"} `}
             >
               <a href="#home">
-                <Image
-                  filename="logo.png"
-                  className="w-5"
-                  className="m-0 lg:hidden mb-3"
-                />
-              </a>
-              <a
-                className="text-lg font-semibold leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative active"
-                style={{
-                  color: "#1d1e3c",
-                  fontFamily: '"Poppins", sans-serif',
-                }}
-                href="#home"
-              >
-                Home
+                <h1 style={{ color: "#27c499" }} className="font-bold text-2xl">
+                  Iko Bagas Haekal
+                </h1>
               </a>
 
-              <a
-                className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-                style={{
-                  color: "#1d1e3c",
-                  fontFamily: '"Poppins", sans-serif',
-                }}
-                href="#tentang"
-              >
-                Tentang
-              </a>
-              <a
-                className="text-lg font-light leading-6 mx-0 lg:mx-5 my-4 lg:my-0 relative"
-                style={{
-                  color: "#1d1e3c",
-                  fontFamily: '"Poppins", sans-serif',
-                }}
-                href="#kontak"
-              >
-                Kontak
-              </a>
               <div className="flex items-center justify-end w-full lg:hidden mt-3">
                 <a
                   href="#kontak"

@@ -15,7 +15,7 @@ const hero = {
 }
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="iko bagas haekal | portofolio" />
     <section className="h-full w-full border-box transition-all duration-500 linear bg-white">
       {/* Hero-header-2-2 */}
       <div id="home">
@@ -37,36 +37,16 @@ const IndexPage = () => (
               Hai saya iko saya seorang web developer
             </h1>
             <div className="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
-              <button
+              <a
+                href="#kontak"
                 className="btn-fill-header-2-2 inline-flex font-semibold text-white text-base py-4 px-6 rounded-xl mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg"
                 style={{
                   background: "#27c499",
                   fontFamily: '"Poppins", sans-serif',
                 }}
               >
-                Hire me!
-              </button>
-              <button
-                className="btn-outline-header-2-2 font-normal text-black text-base py-4 px-6 focus:outline-none bg-transparent rounded hover:border-transparent"
-                style={{ fontFamily: '"Poppins", sans-serif' }}
-              >
-                <div className="flex items-center">
-                  <svg
-                    className="mr-2.5"
-                    width={13}
-                    height={12}
-                    viewBox="0 0 13 13"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.9293 7.99988L6.66668 5.15788V10.8419L10.9293 7.99988ZM12.9173 8.27722L5.85134 12.9879C5.80115 13.0213 5.74283 13.0404 5.6826 13.0433C5.62238 13.0462 5.5625 13.0327 5.50934 13.0042C5.45619 12.9758 5.41175 12.9334 5.38075 12.8817C5.34976 12.83 5.33337 12.7708 5.33334 12.7105V3.28922C5.33337 3.22892 5.34976 3.16976 5.38075 3.11804C5.41175 3.06633 5.45619 3.02398 5.50934 2.99552C5.5625 2.96706 5.62238 2.95355 5.6826 2.95644C5.74283 2.95932 5.80115 2.97848 5.85134 3.01188L12.9173 7.72255C12.963 7.75299 13.0004 7.79423 13.0263 7.84261C13.0522 7.89099 13.0658 7.94501 13.0658 7.99988C13.0658 8.05475 13.0522 8.10878 13.0263 8.15716C13.0004 8.20553 12.963 8.24678 12.9173 8.27722Z"
-                      fill="#555B61"
-                    />
-                  </svg>
-                  Tentang saya
-                </div>
-              </button>
+                Hire Me!
+              </a>
             </div>
           </div>
           {/* Right Column */}
@@ -113,7 +93,7 @@ const IndexPage = () => (
           Skill saya
         </h1>
         <br />
-        <div className="mt-8 sm:mt-10 grid grid-cols-3 sm:grid-cols-6 sm:gap-1 gap-10 ">
+        <div className="mt-8 sm:mt-10 grid grid-cols-3 sm:grid-cols-6 sm:gap-1 gap-12 ">
           <div className="w-2/4">
             <Image className="object-fill block" filename="react.png" />
           </div>
@@ -144,7 +124,7 @@ const IndexPage = () => (
         </h1>
         <br />
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-8 mt-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 gap-y-10 sm:gap-8 mt-8">
           <Card title="website untukdunia" image="untukdunia.png" />
           <Card title="website lowongan kerja" image="icojob.png" />
         </div>
@@ -152,20 +132,19 @@ const IndexPage = () => (
       {/* end skill */}
       <div
         id="kontak"
-        className=" mx-auto flex shadow-xs mb-16 mt-16  sm:mt-10 lg:mb-20 lg:mx-20 sm:mx-16   lg:flex-col flex-col"
+        className="flex   shadow-xs mb-16 mt-16  sm:mt-10 lg:mb-20 sm:mx-20 mx-8   lg:flex-col flex-col"
       >
         <h1 className="sm:text-4xl text-3xl font-bold leading-loose block ">
           Kontak Saya
         </h1>
-        <div className="grid grid-cols-2">
+        <div className="grid sm:grid-cols-2 grid-cols-1">
           <div className="mt-5">
             <div className="bg-white shadow w-full lg:w-1/2 h-full p-5 pt-8">
-              <h3 className="text-2xl font-semibold mb-5">My Social Media</h3>
               {/* list */}
               <div className="flex flex-col gap-3">
                 <a
                   href="https://github.com/iko69-haekal/"
-                  className="flex items-center hover:text-white hover:bg-red-500 p-2"
+                  className="flex items-center hover:text-white hover:bg-green-500 p-2"
                 >
                   <svg
                     fill="currentColor"
@@ -181,7 +160,7 @@ const IndexPage = () => (
                 </a>
                 <a
                   href="https://api.whatsapp.com/send?phone=6285715904647"
-                  className="flex items-center hover:text-white hover:bg-red-500 p-2"
+                  className="flex items-center hover:text-white hover:bg-green-500 p-2"
                 >
                   <svg
                     fill="currentColor"
@@ -195,7 +174,7 @@ const IndexPage = () => (
                 </a>
                 <a
                   href="https://www.youtube.com/channel/UCBG8lrK1kKDVJ-vTdq1d4Lw"
-                  className="flex items-center hover:text-white hover:bg-red-500 p-2"
+                  className="flex items-center hover:text-white hover:bg-green-500 p-2"
                 >
                   <svg
                     fill="currentColor"
@@ -211,20 +190,17 @@ const IndexPage = () => (
                 </a>
                 <a
                   href="mailto: ikobagas69@gmail.com"
-                  className="flex items-center hover:text-white hover:bg-red-500 p-2"
+                  className="flex items-center hover:text-white hover:bg-green-500 p-2"
                 >
                   <svg
+                    fill="currentColor"
                     className="w-6 h-6 m-2"
+                    xmlns="http://www.w3.org/2000/svg"
                     width={24}
                     height={24}
                     viewBox="0 0 24 24"
-                    class="svg-icon"
-                    viewBox="0 0 20 20"
                   >
-                    <path
-                      fill="currentColor"
-                      d="M16.999,4.975L16.999,4.975C16.999,4.975,16.999,4.975,16.999,4.975c-0.419-0.4-0.979-0.654-1.604-0.654H4.606c-0.584,0-1.104,0.236-1.514,0.593C3.076,4.928,3.05,4.925,3.037,4.943C3.034,4.945,3.035,4.95,3.032,4.953C2.574,5.379,2.276,5.975,2.276,6.649v6.702c0,1.285,1.045,2.329,2.33,2.329h10.79c1.285,0,2.328-1.044,2.328-2.329V6.649C17.724,5.989,17.441,5.399,16.999,4.975z M15.396,5.356c0.098,0,0.183,0.035,0.273,0.055l-5.668,4.735L4.382,5.401c0.075-0.014,0.145-0.045,0.224-0.045H15.396z M16.688,13.351c0,0.712-0.581,1.294-1.293,1.294H4.606c-0.714,0-1.294-0.582-1.294-1.294V6.649c0-0.235,0.081-0.445,0.192-0.636l6.162,5.205c0.096,0.081,0.215,0.122,0.334,0.122c0.118,0,0.235-0.041,0.333-0.12l6.189-5.171c0.099,0.181,0.168,0.38,0.168,0.6V13.351z"
-                    ></path>
+                    <path d="M16.999,4.975L16.999,4.975C16.999,4.975,16.999,4.975,16.999,4.975c-0.419-0.4-0.979-0.654-1.604-0.654H4.606c-0.584,0-1.104,0.236-1.514,0.593C3.076,4.928,3.05,4.925,3.037,4.943C3.034,4.945,3.035,4.95,3.032,4.953C2.574,5.379,2.276,5.975,2.276,6.649v6.702c0,1.285,1.045,2.329,2.33,2.329h10.79c1.285,0,2.328-1.044,2.328-2.329V6.649C17.724,5.989,17.441,5.399,16.999,4.975z M15.396,5.356c0.098,0,0.183,0.035,0.273,0.055l-5.668,4.735L4.382,5.401c0.075-0.014,0.145-0.045,0.224-0.045H15.396z M16.688,13.351c0,0.712-0.581,1.294-1.293,1.294H4.606c-0.714,0-1.294-0.582-1.294-1.294V6.649c0-0.235,0.081-0.445,0.192-0.636l6.162,5.205c0.096,0.081,0.215,0.122,0.334,0.122c0.118,0,0.235-0.041,0.333-0.12l6.189-5.171c0.099,0.181,0.168,0.38,0.168,0.6V13.351z"></path>
                   </svg>
                   Gmail
                 </a>
