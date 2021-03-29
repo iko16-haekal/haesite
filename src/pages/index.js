@@ -62,7 +62,7 @@ const IndexPage = () => (
         id="tentang"
         className=" mx-auto  flex shadow-xs mb-16 mt-16  sm:mt-10 lg:mb-20 lg:mx-20 sm:mx-16   lg:flex-row flex-col"
       >
-        <div className="w-screen px-10 sm:grid sm:grid-cols-2 sm:gap-4 sm:p-0">
+        <div className="hidden w-screen px-10 sm:grid sm:grid-cols-2 sm:gap-4 sm:p-0">
           <div className="text">
             <h1 className="sm:text-5xl text-3xl font-bold leading-loose">
               Iko Bagas Haekal
@@ -76,12 +76,35 @@ const IndexPage = () => (
               javascript dan tetap belajar sesuatu yang baru.
             </p>
           </div>
-          <div className="hidden sm:block">
+          <div className=" sm:block">
             <Image
-              className="absolute w-2/4 h-auto  "
-              filename="home-img.png"
+              className="absolute  sm:w-3/4 -mt-24  "
+              filename="me.png"
               alt=""
             />
+          </div>
+        </div>
+
+        <div className="sm:hidden w-screen px-10 grid grid-cols-1 gap-4 p-0">
+          <div className="text">
+            <div className=" sm:block">
+              <Image
+                className="absolute  sm:w-3/4 -mt-24  "
+                filename="me.png"
+                alt=""
+              />
+            </div>
+            <h1 className="text-center sm:text-5xl sm:text-left text-3xl font-bold leading-loose">
+              Iko Bagas Haekal
+            </h1>
+            <br />
+            <h6 className="text-center sm:text-left text-gray-400 font-light">
+              Student | Programmer | Human
+            </h6>
+            <p className="font-weight-light home-text text-center sm:text-left">
+              saya seorang yang tertarik di teknologi frontend, sangat menyukai
+              javascript dan tetap belajar sesuatu yang baru.
+            </p>
           </div>
         </div>
       </div>
