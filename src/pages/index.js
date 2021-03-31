@@ -149,8 +149,21 @@ const IndexPage = () => (
         <br />
 
         <div className="grid grid-cols-1 mr-10 sm:grid-cols-3 gap-2 gap-y-10 sm:gap-8 mt-8">
-          <Card title="website untukdunia" image="untukdunia.png" />
-          <Card title="website lowongan kerja" image="icojob.png" />
+          <Card
+            title="website untukdunia"
+            image="untukdunia.png"
+            link="https://untukdunia.com"
+          />
+          <Card
+            title="website lowongan kerja"
+            image="icojob.png"
+            link="https://github.com/iko69-haekal/web-lowongan-django"
+          />
+          <Card
+            title="covid tracker"
+            image="covid.png"
+            link="https://haekalcovid.netlify.app"
+          />
         </div>
       </div>
       {/* end skill */}

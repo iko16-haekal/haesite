@@ -4,7 +4,7 @@ import Image from "./image"
 function Card({ image, title, description = "", link = "#" }) {
   return (
     <>
-      <a href={link}>
+      <a href={link} target="_blank">
         <div class="bg-white mr-1 sm:mr-0  m-auto border-1  border-dashed border-gray-100 shadow-md rounded-lg overflow-hidden ">
           <div>
             <Image
